@@ -11,7 +11,12 @@
         <Button x:Name="przycisk" Content="Button" HorizontalAlignment="Left" Margin="163,315,0,0" VerticalAlignment="Top" Height="39" Width="191"/>
         <DockPanel Margin="10">
             <WrapPanel HorizontalAlignment="Center" DockPanel.Dock="Top" Margin="0,0,0,10">
-                <Button Name="btnOpenFile" Click="btnOpenFile_Click">Open file</Button>
+                <Button Name="btnOpenFile" Click="btnOpenFile_Click">Open file txt</Button>
+                <Button x:Name="changeStyle" Click="changeStyle_Click" Content="Change style Italic "/>
+                <Button x:Name="changeStyle2" Click="changeStyle2_Click" Content="Times New Roman "/>
+                <Button x:Name="changeStyle3" Click="changeStyle3_Click" Content="Arial "/>
+                <Button x:Name="changeStyle4" Click="changeStyle4_Click" Content="Podkreślenie "/>
+                <Button x:Name="changeStyle5" Click="changeStyle5_Click" Content="gruby "/>
             </WrapPanel>
             <TextBox Name="txtEditor" />
         </DockPanel>

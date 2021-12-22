@@ -26,8 +26,41 @@ namespace edytorTekstu
         {
             InitializeComponent();
         }
-private void btnOpenFile_Click(object sender, RoutedEventArgs e) { OpenFileDialog openFileDialog = new OpenFileDialog(); if (openFileDialog.ShowDialog() == true) txtEditor.Text = File.ReadAllText(openFileDialog.FileName); }
+private void btnOpenFile_Click(object sender, RoutedEventArgs e) { 
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == true) 
+                txtEditor.Text = File.ReadAllText(openFileDialog.FileName); }
+
+        private void changeStyle_Click(object sender, RoutedEventArgs e)
+        {
+            txtEditor.FontStyle = FontStyles.Italic;
+        }
+
+        private void changeStyle2_Click(object sender, RoutedEventArgs e)
+        {
+            txtEditor.FontFamily = new FontFamily("Times, Times New Roman");
+        }
+
+        private void changeStyle3_Click(object sender, RoutedEventArgs e)
+        {
+            txtEditor.FontFamily = new FontFamily("Arial, Arial");
+        }
+
+        private void changeStyle5_Click(object sender, RoutedEventArgs e)
+        {
+            txtEditor.FontWeight = FontWeights.Bold;
+        }
+
+        private void changeStyle4_Click(object sender, RoutedEventArgs e)
+        {
+            txtEditor.TextDecorations = TextDecorations.Underline;
+        }
 
 
+
+        //private void changeStyle_Click(object sender, RoutedEventArgs e)
+        // {
+        //  Button: Action{ FileDialog:}
+        //  }
     }
 }
