@@ -56,7 +56,10 @@ private void btnOpenFile_Click(object sender, RoutedEventArgs e) {
             txtEditor.TextDecorations = TextDecorations.Underline;
         }
 
+        private void changeStyle6_Click(object sender, RoutedEventArgs e)
+        {
 
+        }
 
         //private void changeStyle_Click(object sender, RoutedEventArgs e)
         // {
